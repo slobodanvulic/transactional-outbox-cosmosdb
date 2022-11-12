@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "OrderingService.Api": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7028",
+      "launchBrowser": false
+    }
+  }
+}

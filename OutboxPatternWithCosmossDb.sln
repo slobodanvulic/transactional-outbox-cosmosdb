@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrderingService", "OrderingService", "{9F39A23A-8AF0-48AA-ACAD-9F6B20C166E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InventoryService", "InventoryService", "{B58B1F2C-E5B3-4E53-87EF-EB5DC1162FBB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderingService.Api", "src\OrderingService\OrderingService.Api\OrderingService.Api.csproj", "{020C3780-A2B3-4E91-9C11-65DBC0DBC7DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InvoicingService", "InvoicingService", "{DCB6DBCF-F254-4189-93A0-8C475F72817E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".terraform", ".terraform", "{08DB27D2-BA03-492E-A1CF-A2F449C05102}"
+	ProjectSection(SolutionItems) = preProject
+		terraform\app_insights.tf = terraform\app_insights.tf
+		terraform\cosmosdb.tf = terraform\cosmosdb.tf
+		terraform\function_inventory.tf = terraform\function_inventory.tf
+		terraform\function_invoicing.tf = terraform\function_invoicing.tf
+		terraform\function_ordering.tf = terraform\function_ordering.tf
+		terraform\locals.tf = terraform\locals.tf
+		terraform\provider.tf = terraform\provider.tf
+		terraform\resource_group.tf = terraform\resource_group.tf
+		terraform\service_plan.tf = terraform\service_plan.tf
+		terraform\servicebus.tf = terraform\servicebus.tf
+		terraform\variables.tf = terraform\variables.tf
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventoryService.Processor", "src\InventoryService\InventoryService.Processor\InventoryService.Processor.csproj", "{A9D86A9A-2B23-4660-9904-79FF3157E98B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderingService.Infrastructure", "src\OrderingService\OrderingService.Infrastructure\OrderingService.Infrastructure.csproj", "{771F8B86-452A-43FA-A49E-0CEC2E59D157}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderingService.Domain", "src\OrderingService\OrderingService.Domain\OrderingService.Domain.csproj", "{86095AD6-855B-4EBD-8E5E-E15699AD1D3A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderingService.Application", "src\OrderingService\OrderingService.Application\OrderingService.Application.csproj", "{81D59883-44DA-480E-B8EE-22BB533D74AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoicinService.Processor", "src\InvoicingService\InvoicinService.Processor\InvoicinService.Processor.csproj", "{7A044915-BAC7-41EE-B11C-4B86912687B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{020C3780-A2B3-4E91-9C11-65DBC0DBC7DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{020C3780-A2B3-4E91-9C11-65DBC0DBC7DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{020C3780-A2B3-4E91-9C11-65DBC0DBC7DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{020C3780-A2B3-4E91-9C11-65DBC0DBC7DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9D86A9A-2B23-4660-9904-79FF3157E98B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9D86A9A-2B23-4660-9904-79FF3157E98B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9D86A9A-2B23-4660-9904-79FF3157E98B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9D86A9A-2B23-4660-9904-79FF3157E98B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{771F8B86-452A-43FA-A49E-0CEC2E59D157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{771F8B86-452A-43FA-A49E-0CEC2E59D157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{771F8B86-452A-43FA-A49E-0CEC2E59D157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{771F8B86-452A-43FA-A49E-0CEC2E59D157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86095AD6-855B-4EBD-8E5E-E15699AD1D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86095AD6-855B-4EBD-8E5E-E15699AD1D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86095AD6-855B-4EBD-8E5E-E15699AD1D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86095AD6-855B-4EBD-8E5E-E15699AD1D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81D59883-44DA-480E-B8EE-22BB533D74AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81D59883-44DA-480E-B8EE-22BB533D74AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81D59883-44DA-480E-B8EE-22BB533D74AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81D59883-44DA-480E-B8EE-22BB533D74AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A044915-BAC7-41EE-B11C-4B86912687B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A044915-BAC7-41EE-B11C-4B86912687B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A044915-BAC7-41EE-B11C-4B86912687B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A044915-BAC7-41EE-B11C-4B86912687B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{020C3780-A2B3-4E91-9C11-65DBC0DBC7DA} = {9F39A23A-8AF0-48AA-ACAD-9F6B20C166E8}
+		{A9D86A9A-2B23-4660-9904-79FF3157E98B} = {B58B1F2C-E5B3-4E53-87EF-EB5DC1162FBB}
+		{771F8B86-452A-43FA-A49E-0CEC2E59D157} = {9F39A23A-8AF0-48AA-ACAD-9F6B20C166E8}
+		{86095AD6-855B-4EBD-8E5E-E15699AD1D3A} = {9F39A23A-8AF0-48AA-ACAD-9F6B20C166E8}
+		{81D59883-44DA-480E-B8EE-22BB533D74AD} = {9F39A23A-8AF0-48AA-ACAD-9F6B20C166E8}
+		{7A044915-BAC7-41EE-B11C-4B86912687B3} = {DCB6DBCF-F254-4189-93A0-8C475F72817E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {93587AC5-69E6-40BB-82F2-213F51DC9E49}
+	EndGlobalSection
+EndGlobal

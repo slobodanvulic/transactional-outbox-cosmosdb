@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "641d4da3-9288-43ac-a86b-9966e44894e9",
+		"name": "OutboxPatternWithCosmosDb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Healthcheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Ordering Fn Endpoint}}/api/health",
+					"host": [
+						"{{Ordering Fn Endpoint}}"
+					],
+					"path": [
+						"api",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"OrderDetail\" : \"test details 2\",\r\n    \"CustomerFirstName\" : \"John\",\r\n    \"CustomerLastName\" : \"Doe\",\r\n    \"CustomerAddress\" : \"NY\",\r\n    \"PaymentAmount\" : 100,\r\n    \"PaymentType\" : \"Visa\",\r\n    \"Description\" : \"description\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Ordering Fn Endpoint}}/api/order",
+					"host": [
+						"{{Ordering Fn Endpoint}}"
+					],
+					"path": [
+						"api",
+						"order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
